@@ -1,0 +1,12 @@
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\bin\Debug\netstandard2.0\MovieDBApp.deps.json
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\bin\Debug\netstandard2.0\MovieDBApp.dll
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\bin\Debug\netstandard2.0\MovieDBApp.pdb
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\MovieDBApp.csprojAssemblyReference.cache
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\MovieDBApp.csproj.CoreCompileInputs.cache
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\MovieDBApp.AssemblyInfoInputs.cache
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\MovieDBApp.AssemblyInfo.cs
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\MovieDBApp.dll
+C:\DEV\Xamarin\MovieDBApp\MovieDBApp\MovieDBApp\MovieDBApp\obj\Debug\netstandard2.0\MovieDBApp.pdb
