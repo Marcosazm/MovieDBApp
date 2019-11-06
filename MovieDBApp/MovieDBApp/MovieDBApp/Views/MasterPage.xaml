@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="http://prismlibrary.com"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="MovieDBApp.Views.MasterPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Padding="20">
+                <Frame BackgroundColor="BlueViolet">
+                    <Label  FontSize="Medium" Text="MovieDB App"></Label>
+                </Frame>
+                <!-- TODO: // Update the Layout and add some real menu items  -->
+                <!--<Button Text="ViewA" Command="{Binding NavigateCommand}" CommandParameter="ViewA" />-->
+                <Button Text="UpCommmingMovies" /> 
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>

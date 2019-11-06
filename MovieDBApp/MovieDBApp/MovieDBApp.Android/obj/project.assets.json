@@ -2,13 +2,36 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "Flurl/2.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        }
+      },
+      "Flurl.Http/2.4.2": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "2.8.2",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Flurl.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.Http.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.2": {
@@ -74,6 +97,21 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Text.Encodings.Web/4.6.0": {
@@ -895,6 +933,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Flurl.Http": "2.4.2",
           "Newtonsoft.Json": "12.0.2",
           "Prism.Unity.Forms": "7.2.0.1367",
           "System.Text.Json": "4.6.0",
@@ -910,6 +949,46 @@
     }
   },
   "libraries": {
+    "Flurl/2.8.2": {
+      "sha512": "3VEYAqkGTGHgla4xuyEB4d8XGLeMX2k05C4WfI7YmKQHsL7RhoGu3L6h1xsKKTPFWjEL13p09XOIGwD1pQ86dg==",
+      "type": "package",
+      "path": "flurl/2.8.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.2.8.2.nupkg.sha512",
+        "flurl.nuspec",
+        "lib/net40/Flurl.dll",
+        "lib/net40/Flurl.xml",
+        "lib/netstandard1.0/Flurl.dll",
+        "lib/netstandard1.0/Flurl.xml",
+        "lib/netstandard1.3/Flurl.dll",
+        "lib/netstandard1.3/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "Flurl.Http/2.4.2": {
+      "sha512": "VfSJ0DKzh6kf2IOZGG1/JpHajhtqzGp1t+M1QSyFGse7c4Gg1DpH80LTveYea2hV1BEtvPPEp6A4iZ78D8bxGQ==",
+      "type": "package",
+      "path": "flurl.http/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.http.2.4.2.nupkg.sha512",
+        "flurl.http.nuspec",
+        "lib/net45/Flurl.Http.dll",
+        "lib/net45/Flurl.Http.xml",
+        "lib/net46/Flurl.Http.dll",
+        "lib/net46/Flurl.Http.xml",
+        "lib/netstandard1.1/Flurl.Http.dll",
+        "lib/netstandard1.1/Flurl.Http.xml",
+        "lib/netstandard1.3/Flurl.Http.dll",
+        "lib/netstandard1.3/Flurl.Http.xml",
+        "lib/netstandard2.0/Flurl.Http.dll",
+        "lib/netstandard2.0/Flurl.Http.xml"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.0.0": {
       "sha512": "K63Y4hORbBcKLWH5wnKgzyn7TOfYzevIEwIedQHBIkmkEBA9SCqgvom+XTuE+fAFGvINGkhFItaZ2dvMGdT5iw==",
       "type": "package",
@@ -1066,6 +1145,41 @@
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "sha512": "4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "system.text.encoding.codepages.4.5.1.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2188,11 +2302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DEV\\Xamarin\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.Android\\MovieDBApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\lab3\\Source\\Repos\\MovieDBApp2\\MovieDBApp\\MovieDBApp\\MovieDBApp.Android\\MovieDBApp.Android.csproj",
       "projectName": "MovieDBApp.Android",
-      "projectPath": "C:\\DEV\\Xamarin\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.Android\\MovieDBApp.Android.csproj",
+      "projectPath": "C:\\Users\\lab3\\Source\\Repos\\MovieDBApp2\\MovieDBApp\\MovieDBApp\\MovieDBApp.Android\\MovieDBApp.Android.csproj",
       "packagesPath": "C:\\Users\\lab3\\.nuget\\packages\\",
-      "outputPath": "C:\\DEV\\Xamarin\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.Android\\obj\\",
+      "outputPath": "C:\\Users\\lab3\\Source\\Repos\\MovieDBApp2\\MovieDBApp\\MovieDBApp\\MovieDBApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2213,8 +2327,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\DEV\\Xamarin\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.csproj": {
-              "projectPath": "C:\\DEV\\Xamarin\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.csproj"
+            "C:\\Users\\lab3\\Source\\Repos\\MovieDBApp2\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.csproj": {
+              "projectPath": "C:\\Users\\lab3\\Source\\Repos\\MovieDBApp2\\MovieDBApp\\MovieDBApp\\MovieDBApp\\MovieDBApp.csproj"
             }
           }
         }

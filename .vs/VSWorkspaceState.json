@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MovieDBApp",
+    "\\MovieDBApp\\MovieDBApp",
+    "\\MovieDBApp\\MovieDBApp\\MovieDBApp",
+    "\\MovieDBApp\\MovieDBApp\\MovieDBApp\\Services"
   ],
   "PreviewInSolutionExplorer": false
 }

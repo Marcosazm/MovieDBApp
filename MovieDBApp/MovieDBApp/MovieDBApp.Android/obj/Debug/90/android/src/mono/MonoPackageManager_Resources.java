@@ -3,11 +3,17 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "MovieDBApp.Android.dll" comes first in this list. */
 		"MovieDBApp.Android.dll",
+		"Flurl.dll",
+		"Flurl.Http.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"MovieDBApp.dll",
+		"Newtonsoft.Json.dll",
 		"Prism.dll",
 		"Prism.Forms.dll",
 		"Prism.Unity.Forms.dll",
+		"System.Text.Encodings.Web.dll",
+		"System.Text.Json.dll",
 		"Unity.Abstractions.dll",
 		"Unity.Container.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
